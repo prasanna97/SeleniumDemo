@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Clicked on Click Here]]>
+    </line>
+    <line>
+      <![CDATA[Entered Text " admin " in theUsername Textbox]]>
+    </line>
+    <line>
+      <![CDATA[Entered Text " Test@12345 " in thePassword Textbox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on LoginBtn]]>
+    </line>
+    <line>
+      <![CDATA[Admin Dashboard is Login Sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Doctors]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Add Doctor]]>
+    </line>
+    <line>
+      <![CDATA[Entered Text " Akshith " in theDoctorsNamSe]]>
+    </line>
+    <line>
+      <![CDATA[Entered Text " Bangalore " in theDoctor Clinic Address]]>
+    </line>
+    <line>
+      <![CDATA[Consultance Fee is not Displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22540" started-at="2020-07-06T11:48:09Z" finished-at="2020-07-06T11:48:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22540" started-at="2020-07-06T11:48:09Z" finished-at="2020-07-06T11:48:31Z">
+      <class name="com.tyss.ProjectFrameworkHMS.Scripts.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tyss.ProjectFrameworkHMS.Scripts.LoginTest@6a41eaa2]" name="setUp" is-config="true" duration-ms="9959" started-at="2020-07-06T11:48:09Z" finished-at="2020-07-06T11:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="TC_02()[pri:0, instance:com.tyss.ProjectFrameworkHMS.Scripts.LoginTest@6a41eaa2]" name="TC_02" duration-ms="12339" started-at="2020-07-06T11:48:19Z" finished-at="2020-07-06T11:48:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at com.tyss.ProjectFrameworkHMS.lib.GenericLib.enterText1(GenericLib.java:81)
+at com.tyss.ProjectFrameworkHMS.pages.DashBoardpage.dropdown(DashBoardpage.java:48)
+at com.tyss.ProjectFrameworkHMS.Scripts.LoginTest.TC_02(LoginTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Click Here]]>
+            </line>
+            <line>
+              <![CDATA[Entered Text " admin " in theUsername Textbox]]>
+            </line>
+            <line>
+              <![CDATA[Entered Text " Test@12345 " in thePassword Textbox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on LoginBtn]]>
+            </line>
+            <line>
+              <![CDATA[Admin Dashboard is Login Sucessfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Doctors]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Add Doctor]]>
+            </line>
+            <line>
+              <![CDATA[Entered Text " Akshith " in theDoctorsNamSe]]>
+            </line>
+            <line>
+              <![CDATA[Entered Text " Bangalore " in theDoctor Clinic Address]]>
+            </line>
+            <line>
+              <![CDATA[Consultance Fee is not Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tyss.ProjectFrameworkHMS.Scripts.LoginTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="195" started-at="2020-07-06T11:48:31Z" finished-at="2020-07-06T11:48:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tyss.ProjectFrameworkHMS.Scripts.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
