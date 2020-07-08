@@ -51,6 +51,12 @@ public class selectdropdown {
 		Select decspl=new Select(driver.findElement(By.name("Doctorspecialization")));
 		decspl.selectByValue("Ayurveda");
 		driver.close();
-		}
+		FileInputStream fin=new FileInputStream("D:\\selenium\\ProjectFrameworkHMS\\src\\test\\resources\\Excel\\HSM-Login.xlsx");
+		Workbook wb1=WorkbookFactory.create(fin);	
+		int c = (int)wb1.getSheet("Sheet1").getRow(1).getCell(7).getNumericCellValue();
+		System.out.println(c);
+		int c1 =(int) wb.getSheet("Sheet1").getRow(1).getCell(8).getNumericCellValue();
+		System.out.println(c1);
+	}
 	}
 

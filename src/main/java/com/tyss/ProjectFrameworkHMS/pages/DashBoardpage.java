@@ -39,7 +39,7 @@ public class DashBoardpage {
 		return driver.getTitle();
 		
 	}
-	public  void dropdown(String Docname,String DocAddress,CharSequence[] Consultancefee)
+	public  void dropdown(String Docname,String DocAddress,double Consultancefee)
 	{
 		Select decspl=new Select(driver.findElement(By.name("Doctorspecialization")));
 		decspl.selectByValue("Ayurveda");

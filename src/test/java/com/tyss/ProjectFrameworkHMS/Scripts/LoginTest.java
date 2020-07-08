@@ -59,10 +59,21 @@ public class LoginTest extends BaseLib
 		Assert.assertEquals(sip.getSignInPage(),ExcelLib.getdata("Sheet1", 1, 4,IConstants.adminlogindata));
 		String Docname=ExcelLib.getdata("Sheet1", 1, 5,IConstants.adminlogindata);
 		String DocAddress=ExcelLib.getdata("Sheet1",1, 6,IConstants.adminlogindata);
-		double Consultancefee=ExcelLib.getdata1("Sheet1",1, 7, IConstants.adminlogindata);
+		int Consultancefee=(int)ExcelLib.getdata1("Sheet1",1, 7, IConstants.adminlogindata);
 		db.dropdown(Docname,DocAddress,Consultancefee);
 		Thread.sleep(5000);
-		
+		}
+	@Test
+	public void TC_03() {
+		SigninPage sip=new SigninPage(driver);
+		String username=ExcelLib.getdata("Sheet1",1, 1, IConstants.adminlogindata);
+		String password=ExcelLib.getdata("Sheet1",1,2,IConstants.adminlogindata);
+		sip.doLogin(username, password);
+		Reporter.log("Admin Dashboard is Login Sucessfully");
+		DashBoardpage db=new DashBoardpage(driver);
+		Assert.assertEquals(sip.getSignInPage(),ExcelLib.getdata("Sheet1", 1, 3,IConstants.adminlogindata));
+		db.clickOnDoctors();
+		//driver.findElements(By.xpath(""))
 		
 	}
 

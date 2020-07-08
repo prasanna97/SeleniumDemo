@@ -69,18 +69,18 @@ public class GenericLib {
 		}
 		
 	}
-	public static void enterText1(WebDriver driver, WebElement ConsultancefeeTxt, CharSequence[] consultancefee, String string) {
-		WebDriverWait wait=new WebDriverWait(driver,10);
-		try {
-		wait.until(ExpectedConditions.visibilityOf(ConsultancefeeTxt)).sendKeys(consultancefee);
-		Reporter.log("Entered Text \" "+consultancefee+" \" in the"+consultancefee);
-		}
-		catch(Exception e)
-		{
-			Reporter.log(string+" is not Displayed");
-			  Assert.fail();
-		}
-		
-	}
+//		public static void enterText1(WebDriver driver, WebElement ConsultancefeeTxt, int consultancyfee,String string) {
+//		WebDriverWait wait=new WebDriverWait(driver,10);
+//		try {
+//		wait.until(ExpectedConditions.visibilityOf(ConsultancefeeTxt)).sendKeys(consultancyfee);
+//		Reporter.log("Entered value \" "+consultancyfee+" \" in the"+ string);
+//		}
+//		catch(Exception e)
+//		{
+//			Reporter.log(string+" is not Displayed");
+//			  Assert.fail();
+//		}
+//		
+//	}
 	
 }

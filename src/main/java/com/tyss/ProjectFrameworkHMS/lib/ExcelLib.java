@@ -17,7 +17,6 @@ public class ExcelLib {
 			Workbook wb=WorkbookFactory.create(fin);
 			Cell c=wb.getSheet(sheet).getRow(row).getCell(cell);
 			val=c.getStringCellValue();
-			val1=c.getNumericCellValue();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -25,15 +24,14 @@ public class ExcelLib {
 		return val;
 		 
 	 }
-	public static double getdata1(String sheet,int row,int cell,String filepath)
+	public static int getdata1(String sheet,int row,int cell,String filepath)
 	 {
 		
-		 double val1=0;
+		 int val1=0;
 		 try {
 			FileInputStream fin=new FileInputStream(filepath);
 			Workbook wb=WorkbookFactory.create(fin);
-			Cell c=wb.getSheet(sheet).getRow(row).getCell(cell);
-			val1=c.getNumericCellValue();
+			int c=(int)wb.getSheet(sheet).getRow(row).getCell(cell).getNumericCellValue();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

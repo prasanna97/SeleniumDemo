@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 06 17:18:09 IST 2020</td>
+<td>Started on:</td><td>Wed Jul 08 12:19:27 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22540 ms)</td>
+<tr><td>Total time:</td><td>65 seconds (65029 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.tyss.ProjectFrameworkHMS.Scripts.LoginTest.TC_02()'><b>TC_02</b><br>Test class: com.tyss.ProjectFrameworkHMS.Scripts.LoginTest<br/>
-<a href="#Output-692998280" onClick='toggleBox("Output-692998280", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1600594643" onClick='toggleBox("Output-1600594643", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-692998280" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-692998280">
+<a href="#Output-1600594643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1600594643">
 Clicked on Click Here<br/>
 Entered Text " admin " in theUsername Textbox<br/>
 Entered Text " Test@12345 " in thePassword Textbox<br/>
@@ -87,15 +87,11 @@ Clicked on LoginBtn<br/>
 Admin Dashboard is Login Sucessfully<br/>
 Clicked on Doctors<br/>
 Clicked on Add Doctor<br/>
-Entered Text " Akshith " in theDoctorsNamSe<br/>
-Entered Text " Bangalore " in theDoctor Clinic Address<br/>
-Consultance Fee is not Displayed<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at com.tyss.ProjectFrameworkHMS.lib.GenericLib.enterText1(GenericLib.java:81)
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method enterText1(WebDriver, WebElement, double, String) is undefined for the type GenericLib
+
 	at com.tyss.ProjectFrameworkHMS.pages.DashBoardpage.dropdown(DashBoardpage.java:48)
 	at com.tyss.ProjectFrameworkHMS.Scripts.LoginTest.TC_02(LoginTest.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -123,11 +119,10 @@ Consultance Fee is not Displayed<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace692998280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace692998280'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at com.tyss.ProjectFrameworkHMS.lib.GenericLib.enterText1(GenericLib.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1600594643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600594643'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method enterText1(WebDriver, WebElement, double, String) is undefined for the type GenericLib
+
 	at com.tyss.ProjectFrameworkHMS.pages.DashBoardpage.dropdown(DashBoardpage.java:48)
 	at com.tyss.ProjectFrameworkHMS.Scripts.LoginTest.TC_02(LoginTest.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -156,7 +151,32 @@ Consultance Fee is not Displayed<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
+<td>23</td>
+<td>com.tyss.ProjectFrameworkHMS.Scripts.LoginTest@6a41eaa2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tyss.ProjectFrameworkHMS.Scripts.LoginTest.TC_03()'><b>TC_03</b><br>Test class: com.tyss.ProjectFrameworkHMS.Scripts.LoginTest<br/>
+<a href="#Output-1800967368" onClick='toggleBox("Output-1800967368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1800967368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1800967368">
+Clicked on Click Here<br/>
+Entered Text " admin " in theUsername Textbox<br/>
+Entered Text " Test@12345 " in thePassword Textbox<br/>
+Clicked on LoginBtn<br/>
+Admin Dashboard is Login Sucessfully<br/>
+Clicked on Doctors<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
 <td>com.tyss.ProjectFrameworkHMS.Scripts.LoginTest@6a41eaa2</td></tr>
 </table><p>
 </body>
